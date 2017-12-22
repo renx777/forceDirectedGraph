@@ -23,13 +23,12 @@ const forceY = d3.forceY(height / 4).strength(0.05)
   
   
   
-  
   var simulation = d3
   
   .forceSimulation()
-  .force("link", d3.forceLink())
-  
-    
+//  changing link distance troubled me so much,but at end was so simple
+  .force("link", d3.forceLink().distance(100))
+ 
   .force('x', forceX)
   .force('y',  forceY)
   
@@ -37,6 +36,9 @@ const forceY = d3.forceY(height / 4).strength(0.05)
   .force("center", d3.forceCenter(width /2, height / 2))
   
 
+  
+  
+  
   // creates lines in graph,
   var link = svg
   .append("g")

@@ -1,5 +1,8 @@
 
+body{
+  background: #b00e0ef7;
 
+}
 .links line {
   stroke:white;
   stroke-opacity: 0.6
@@ -13,7 +16,7 @@ svg{
 .card{
   margin:0 auto;
   width:1200px;
-  
+   background:#a6bdb5;
    -moz-box-shadow:    inset 0 0 10px #000000;
    -webkit-box-shadow: inset 0 0 10px #000000;
    box-shadow:         inset 0 0 10px #000000;
